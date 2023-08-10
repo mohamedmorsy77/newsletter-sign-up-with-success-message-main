@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@500;600&family=Cairo:wght@300;400;700&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;600;700&family=Montserrat:wght@500;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Rubik:wght@400;500;700&display=swap");
+
+:root {
+  --Dark_Slate_Grey: hsl(234, 29%, 20%);
+  --Charcoal_Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+  --Tomato: hsl(4, 100%, 67%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  min-height: 100vh;
+  background-color: var(--Charcoal_Grey);
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+li {
+  list-style: none;
+}
+p {
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  background-color: var(--White);
+  max-width: 800px;
+  display: flex;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 0 4px hsl(231, 7%, 60%);
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0;
+    width: 100%;
+    flex-direction: column-reverse;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+  .sign {
+    padding: 0;
+    margin-left: 20px;
+  }
+  .image img {
+    background: url(assets/images/illustration-sign-up-mobile.svg);
+    width: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .success {
+    width: 300px;
+  }
+}
+.sign {
+  text-align: start;
+  position: relative;
+  padding: 69px 2px;
+}
+h2 {
+  font-size: 40px;
+  color: var(--Dark_Slate_Grey);
+}
+h2 + p {
+  margin-top: 20px;
+}
+p {
+  color: var(--Charcoal_Grey);
+}
+.sign ul {
+  margin-top: 30px;
+}
+.sign ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  max-width: 330px;
+  gap: 10px;
+}
+.form label {
+  color: var(--Dark_Slate_Grey);
+}
+.form input[type="email"] {
+  padding: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--Grey);
+  cursor: pointer;
+}
+button {
+  padding: 15px;
+  cursor: pointer;
+  color: var(--White);
+  border: none;
+  background-color: var(--Dark_Slate_Grey);
+  margin-top: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 14px;
+}
+button:hover {
+  background-color: #f1763d;
+}
+.head_form {
+  display: flex;
+  justify-content: space-between;
+}
+.head_form p {
+  display: none;
+  color: rgb(249, 15, 15);
+  z-index: 1;
+}
+.success {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  /* z-index: -1; */
+  background-color: var(--White);
+  text-align: initial;
+  padding: 20px;
+  max-width: 350px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: rgb(128, 243, 128);
+}
+.success img {
+  width: 50px;
+}
+.success h2 {
+  margin-top: 15px;
+}
+
+.success p span {
+  color: var(--Dark_Slate_Grey);
+  font-weight: bold;
+}
+.success button {
+  display: block;
+  width: fit-content;
+  margin: 25px auto;
+  padding: 15px 70px;
+  background-color: var(--Dark_Slate_Grey);
+  color: var(--White);
+  font-weight: bold;
+  cursor: pointer;
+}
+.success button:hover {
+  background-color: #f1763d;
+}
